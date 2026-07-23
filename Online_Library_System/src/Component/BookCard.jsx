@@ -6,10 +6,10 @@ function BookCard({book}) {
     <div className="w-64 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all cursor-pointer">
       
       {/* THE IMAGE CONTAINER: Fixed height to keep all cards uniform */}
-      <div className="h-80 w-full bg-gray-100">
+      <div className="h-50 w-full bg-gray-100">
         <img 
           src={book.coverImage} 
-          alt="Rich Dad Poor Dad cover" 
+          alt={book.title} 
           className="w-full h-full object-cover"
         />
       </div>

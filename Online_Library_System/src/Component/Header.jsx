@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   
@@ -25,13 +26,13 @@ function Header() {
       <nav className="hidden md:flex">
         <ul className="flex items-center gap-8">
           <li className="text-gray-600 font-medium hover:text-blue-600 cursor-pointer transition-colors">
-            Home
+           <Link to="/">Home</Link> 
           </li>
           <li className="text-gray-600 font-medium hover:text-blue-600 cursor-pointer transition-colors">
-            Browse Books
+            <Link to="/booksbrowser">Browse Books</Link>
           </li>
           <li className="text-gray-600 font-medium hover:text-blue-600 cursor-pointer transition-colors">
-            Add Book
+           <Link to="/addbook">Add Book</Link>
           </li>
         </ul>
       </nav>

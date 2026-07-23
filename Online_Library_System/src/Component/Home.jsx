@@ -3,6 +3,7 @@ import Category from '../Utils/Category'
 import CategoryCard from './CategoryCard'
 import BookCard from './BookCard'
 import Books from '../Utils/BooksData'
+import { Link } from 'react-router-dom'
 function Home() {
 
     console.log(Category)
@@ -15,12 +16,12 @@ function Home() {
                 <h1 className="text-2xl font-bold text-blue-600">
                     Hello, Welcome To Library
                 </h1>
-                <button
+                <Link to="/addbook"><button
                     type="button"
                     className="bg-blue-600 text-white px-5 py-2 rounded-md font-medium hover:bg-blue-700 transition-colors shadow-sm"
                 >
                     Add Book +
-                </button>
+                </button></Link>
             </div>
             <div className="p-10">
 

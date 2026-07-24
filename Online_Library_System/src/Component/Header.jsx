@@ -29,7 +29,7 @@ function Header() {
            <Link to="/">Home</Link> 
           </li>
           <li className="text-gray-600 font-medium hover:text-blue-600 cursor-pointer transition-colors">
-            <Link to="/booksbrowser">Browse Books</Link>
+            <Link to="/booksbrowser/null">Browse Books</Link>
           </li>
           <li className="text-gray-600 font-medium hover:text-blue-600 cursor-pointer transition-colors">
            <Link to="/addbook">Add Book</Link>

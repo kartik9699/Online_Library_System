@@ -11,6 +11,4 @@ export const genreSlice = createSlice({
     
   },
 });
-
-//export const {  } = booksSlice.actions;
 export default genreSlice.reducer;

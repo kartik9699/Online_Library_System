@@ -32,23 +32,23 @@ function Home() {
                 </Link>
             </div>
 
-            {/* Category Section */}
+            
             <div className="p-10">
                 <h2 className="text-2xl font-bold text-gray-800 mb-6">
                     Category
                 </h2>
-                {/* Changed to standard flex-wrap for better mobile stacking */}
+                
                 <div className="flex gap-4 flex-wrap justify-around">
                     {Category.map((item) => {
                         return (
-                            // Ideally use item.id if your Category data has one, otherwise index is okay for static lists
+                            
                             <Link to={`/booksbrowser/${item.id}`}><CategoryCard key={item.id} category={item} /></Link>
                         )
                     })}
                 </div>
             </div>
 
-            {/* Most Read Books Section */}
+            
             <div className="p-10">
                 <h2 className="text-2xl font-bold text-gray-800 mb-6">
                     Most Read Books

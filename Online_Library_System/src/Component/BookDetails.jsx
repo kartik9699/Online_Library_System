@@ -14,7 +14,7 @@ function BookDetails() {
           <img 
             src={book.coverImage}
             alt={book.title} 
-            className="w-full max-w-[300px] h-auto object-cover rounded-xl shadow-md" 
+            className="w-full max-w-75 h-auto object-cover rounded-xl shadow-md" 
           />
         </div>
         <div className="w-full md:w-2/3 flex flex-col gap-4">

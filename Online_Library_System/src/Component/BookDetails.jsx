@@ -1,14 +1,25 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams,useNavigate } from 'react-router-dom';
 import { store } from '../Utils/store';
+
 
 function BookDetails() {
   const {id} =useParams()
   const books = useSelector((state) => state.books.booksList);
   const book = books.find((item) => item.id === id);
+  const navigate = useNavigate();
   return (
     <div className="max-w-4xl mx-auto p-6 md:p-10 my-8 bg-white rounded-2xl shadow-sm border border-gray-100">
+      <button 
+        onClick={() => navigate('/booksbrowser/null')} 
+        className="mb-6 flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors"
+      >
+        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to Browse
+      </button>
       <div className="flex flex-col md:flex-row gap-10 items-start">
         <div className="w-full md:w-1/3 flex justify-center">
           <img 
